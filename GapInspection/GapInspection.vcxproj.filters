@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="OCX">
+      <UniqueIdentifier>{545a94ba-042f-4d2f-bf2b-047a50b7caf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DIalog">
+      <UniqueIdentifier>{0f693274-8b13-4bdd-900c-fd1e9f00d3e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light">
+      <UniqueIdentifier>{818602fc-f69e-46f0-b308-3d165bcd093b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{e5d1e24c-3438-44fb-aaac-e94fe9479889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vision">
+      <UniqueIdentifier>{17d356b0-1b2b-4a65-9a02-f94c1439fbad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\AXIS">
+      <UniqueIdentifier>{53cbcf07-727a-42a5-930a-f7626c0fd7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\MOTION">
+      <UniqueIdentifier>{1a8fe4b1-567d-4c49-b986-0651edf40266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCX\Chart">
+      <UniqueIdentifier>{bc4dcff3-50da-46fe-a112-3c2a119e3a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\TCP">
+      <UniqueIdentifier>{7e540cbe-8c86-4a85-9d59-c3ee8494288b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Barcode">
+      <UniqueIdentifier>{8211974b-6a8b-435d-86c5-ffdabc3c7263}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GapInspection.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\GapInspection.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\gap_aJn_icon.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Off.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\On.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>헤더 파일</Filter>
+    </None>
+    <None Include="res\ico_Jw8_2.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GapInspection.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GapInspectionDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\btnenhctrl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\define.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LogFile.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProfileDataIF.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeCheck.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\_Font.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\COMMTHREAD.H">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\GetNumDlg.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\GetTextDlg.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\ListBoxST.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\MyListCtrl.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision\Vision.h">
+      <Filter>Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision\StaticMatDisplay.h">
+      <Filter>Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision\CameraManager.h">
+      <Filter>Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogSpec.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogSystem.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogTeach.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogZoomView.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogJog.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision\_CtrlTracker.h">
+      <Filter>Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogInspRslt.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogInspPoint.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogAlarmMsg.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogMotion.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Axis\Axis_Io_def.h">
+      <Filter>Include\AXIS</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Axis\FAS_EziMOTIONPlusR.h">
+      <Filter>Include\AXIS</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Axis\MOTION_DEFINE.h">
+      <Filter>Include\AXIS</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Motion\SequenceModule.h">
+      <Filter>Include\MOTION</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Axis\Axis.h">
+      <Filter>Include\AXIS</Filter>
+    </ClInclude>
+    <ClInclude Include="Light\SerialPort.h">
+      <Filter>Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision\cvBlobFinder.h">
+      <Filter>Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDelete.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogBarcodePopup.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\DialogDriveSelect.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NghUtil.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogSpecPoint.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogAvgRsltView.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogAvgRsltChart.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\Chart\bchartdir.h">
+      <Filter>OCX\Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\Chart\chartdir.h">
+      <Filter>OCX\Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\Chart\ChartViewer.h">
+      <Filter>OCX\Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\Chart\FinanceChart.h">
+      <Filter>OCX\Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\Chart\memblock.h">
+      <Filter>OCX\Chart</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TCP\UserSockClient.H">
+      <Filter>Include\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="Ocx\DialogAlgorithmSelect.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DialogSpecPointOffset.h">
+      <Filter>DIalog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GapInspection.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GapInspectionDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="include\btnenhctrl.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\define.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\LogFile.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ProfileDataIF.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TimeCheck.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\COMMTHREAD.CPP">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\GetNumDlg.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\GetTextDlg.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\ListBoxST.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\MyListCtrl.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision\Vision.cpp">
+      <Filter>Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision\StaticMatDisplay.cpp">
+      <Filter>Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision\CameraManager.cpp">
+      <Filter>Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogSpec.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogSystem.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogTeach.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogZoomView.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogJog.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision\_CtrlTracker.cpp">
+      <Filter>Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogInspRslt.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogInspPoint.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogAlarmMsg.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogMotion.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Motion\SequenceModule.cpp">
+      <Filter>Include\MOTION</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Axis\Axis.cpp">
+      <Filter>Include\AXIS</Filter>
+    </ClCompile>
+    <ClCompile Include="Light\SerialPort.cpp">
+      <Filter>Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision\cvBlobFinder.cpp">
+      <Filter>Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="include\AutoDelete.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogBarcodePopup.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\DialogDriveSelect.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="include\NghUtil.cpp">
+      <Filter>Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogSpecPoint.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogAvgRsltView.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogAvgRsltChart.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\Chart\ChartViewer.cpp">
+      <Filter>OCX\Chart</Filter>
+    </ClCompile>
+    <ClCompile Include="include\TCP\UserSockClient.CPP">
+      <Filter>Include\TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Ocx\DialogAlgorithmSelect.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DialogSpecPointOffset.cpp">
+      <Filter>DIalog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GapInspection.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Ocx\Chart\chartdir60.lib">
+      <Filter>OCX\Chart</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

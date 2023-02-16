@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E44E256-7F4A-43FF-8CDD-7442ABA9AF13}</ProjectGuid>
+    <RootNamespace>GapInspection</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>PGInstrument</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\MELSEC\Common\INCLUDE;$(ProjectDir)include\TCP\;$(ProjectDir)Ocx\Chart\;.\;$(ProjectDir)include\;$(ProjectDir)Motion\;$(ProjectDir)Dialog\;$(ProjectDir)LIght\;$(ProjectDir)PLC\;$(ProjectDir)OCX\;D:\OpenCV_341\include;$(ProjectDir)Vision\;C:\Program Files %28x86%29\FASTECH\Ezi-MOTION Plus-R V6\Include;C:\Program Files\Basler\pylon 4\pylon\include;C:\Program Files\Basler\pylon 4\genicam\library\cpp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\MELSEC\Common\LIB\x64;$(ProjectDir)Ocx\Chart\;C:\Program Files %28x86%29\FASTECH\Ezi-MOTION Plus-R V6\Include\x64;D:\OpenCV_341\x64\vc10\lib;C:\Program Files\Basler\pylon 4\genicam\library\cpp\lib\win64_x64;C:\Program Files\Basler\pylon 4\pylon\lib\x64;$(LibraryPath)</LibraryPath>
+    <ReferencePath>C:\Program Files\Basler\pylon 4\genicam\bin\win64_x64;C:\Program Files\Basler\pylon 4\pylon\bin\x64;$(ReferencePath)</ReferencePath>
+    <OutDir>D:\GapInspData\BIN\</OutDir>
+    <TargetName>UB_Tilt_Inspection</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)include\TCP\;$(ProjectDir)Ocx\Chart\;.\;$(ProjectDir)include\;$(ProjectDir)Motion\;$(ProjectDir)Dialog\;$(ProjectDir)LIght\;$(ProjectDir)PLC\;$(ProjectDir)OCX\;D:\OpenCV_341\include;$(ProjectDir)Vision\;C:\Program Files %28x86%29\FASTECH\Ezi-MOTION Plus-R V6\Include;C:\Program Files\Basler\pylon 4\pylon\include;C:\Program Files\Basler\pylon 4\genicam\library\cpp\include;$(IncludePath);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <ReferencePath>C:\Program Files\Basler\pylon 4\genicam\bin\win64_x64;C:\Program Files\Basler\pylon 4\pylon\bin\x64;$(ReferencePath);$(VCInstallDir)atlmfc\lib\amd64;$(VCInstallDir)lib\amd64</ReferencePath>
+    <LibraryPath>C:\MELSEC\Common\LIB\x64;$(ProjectDir)Ocx\Chart\;C:\Program Files %28x86%29\FASTECH\Ezi-MOTION Plus-R V6\Include\x64;D:\OpenCV_341\x64\vc10\lib;C:\Program Files\Basler\pylon 4\genicam\library\cpp\lib\win64_x64;C:\Program Files\Basler\pylon 4\pylon\lib\x64;$(LibraryPath);$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
+    <OutDir>D:\GapInspData\BIN\</OutDir>
+    <TargetName>UB_Tilt_Inspection</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4005;4244;4267;4819;</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>chartdir60.lib;opencv_world341d.lib;PylonBase_MD_VC100.lib;winmm.lib;SetupApi.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>chartdir60.lib;opencv_world341.lib;PylonBase_MD_VC100.lib;winmm.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\GapInspection.ico" />
+    <None Include="res\GapInspection.rc2" />
+    <None Include="res\gap_aJn_icon.ico" />
+    <None Include="res\ico_Jw8_2.ico" />
+    <None Include="res\Off.bmp" />
+    <None Include="res\On.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dialog\DialogAlarmMsg.h" />
+    <ClInclude Include="Dialog\DialogAvgRsltChart.h" />
+    <ClInclude Include="Dialog\DialogAvgRsltView.h" />
+    <ClInclude Include="Dialog\DialogBarcodePopup.h" />
+    <ClInclude Include="Dialog\DialogInspPoint.h" />
+    <ClInclude Include="Dialog\DialogInspRslt.h" />
+    <ClInclude Include="Dialog\DialogJog.h" />
+    <ClInclude Include="Dialog\DialogMotion.h" />
+    <ClInclude Include="Dialog\DialogSpec.h" />
+    <ClInclude Include="Dialog\DialogSpecPoint.h" />
+    <ClInclude Include="Dialog\DialogSpecPointOffset.h" />
+    <ClInclude Include="Dialog\DialogSystem.h" />
+    <ClInclude Include="Dialog\DialogTeach.h" />
+    <ClInclude Include="Dialog\DialogZoomView.h" />
+    <ClInclude Include="GapInspection.h" />
+    <ClInclude Include="GapInspectionDlg.h" />
+    <ClInclude Include="include\AutoDelete.h" />
+    <ClInclude Include="include\Axis\Axis.h" />
+    <ClInclude Include="include\Axis\Axis_Io_def.h" />
+    <ClInclude Include="include\Axis\FAS_EziMOTIONPlusR.h" />
+    <ClInclude Include="include\Axis\MOTION_DEFINE.h" />
+    <ClInclude Include="include\btnenhctrl.h" />
+    <ClInclude Include="include\define.h" />
+    <ClInclude Include="include\LogFile.h" />
+    <ClInclude Include="include\Motion\SequenceModule.h" />
+    <ClInclude Include="include\NghUtil.h" />
+    <ClInclude Include="include\ProfileDataIF.h" />
+    <ClInclude Include="include\TCP\UserSockClient.H" />
+    <ClInclude Include="include\TimeCheck.h" />
+    <ClInclude Include="include\_Font.h" />
+    <ClInclude Include="Light\COMMTHREAD.H" />
+    <ClInclude Include="Light\SerialPort.h" />
+    <ClInclude Include="Ocx\Chart\bchartdir.h" />
+    <ClInclude Include="Ocx\Chart\chartdir.h" />
+    <ClInclude Include="Ocx\Chart\ChartViewer.h" />
+    <ClInclude Include="Ocx\Chart\FinanceChart.h" />
+    <ClInclude Include="Ocx\Chart\memblock.h" />
+    <ClInclude Include="Ocx\DialogAlgorithmSelect.h" />
+    <ClInclude Include="Ocx\DialogDriveSelect.h" />
+    <ClInclude Include="Ocx\GetNumDlg.h" />
+    <ClInclude Include="Ocx\GetTextDlg.h" />
+    <ClInclude Include="Ocx\ListBoxST.h" />
+    <ClInclude Include="Ocx\MyListCtrl.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Vision\CameraManager.h" />
+    <ClInclude Include="Vision\cvBlobFinder.h" />
+    <ClInclude Include="Vision\StaticMatDisplay.h" />
+    <ClInclude Include="Vision\Vision.h" />
+    <ClInclude Include="Vision\_CtrlTracker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dialog\DialogAlarmMsg.cpp" />
+    <ClCompile Include="Dialog\DialogAvgRsltChart.cpp" />
+    <ClCompile Include="Dialog\DialogAvgRsltView.cpp" />
+    <ClCompile Include="Dialog\DialogBarcodePopup.cpp" />
+    <ClCompile Include="Dialog\DialogInspPoint.cpp" />
+    <ClCompile Include="Dialog\DialogInspRslt.cpp" />
+    <ClCompile Include="Dialog\DialogJog.cpp" />
+    <ClCompile Include="Dialog\DialogMotion.cpp" />
+    <ClCompile Include="Dialog\DialogSpec.cpp" />
+    <ClCompile Include="Dialog\DialogSpecPoint.cpp" />
+    <ClCompile Include="Dialog\DialogSpecPointOffset.cpp" />
+    <ClCompile Include="Dialog\DialogSystem.cpp" />
+    <ClCompile Include="Dialog\DialogTeach.cpp" />
+    <ClCompile Include="Dialog\DialogZoomView.cpp" />
+    <ClCompile Include="GapInspection.cpp" />
+    <ClCompile Include="GapInspectionDlg.cpp" />
+    <ClCompile Include="include\AutoDelete.cpp" />
+    <ClCompile Include="include\Axis\Axis.cpp" />
+    <ClCompile Include="include\btnenhctrl.cpp" />
+    <ClCompile Include="include\define.cpp" />
+    <ClCompile Include="include\LogFile.cpp" />
+    <ClCompile Include="include\Motion\SequenceModule.cpp" />
+    <ClCompile Include="include\NghUtil.cpp" />
+    <ClCompile Include="include\ProfileDataIF.cpp" />
+    <ClCompile Include="include\TCP\UserSockClient.CPP" />
+    <ClCompile Include="include\TimeCheck.cpp" />
+    <ClCompile Include="Light\COMMTHREAD.CPP" />
+    <ClCompile Include="Light\SerialPort.cpp" />
+    <ClCompile Include="Ocx\Chart\ChartViewer.cpp" />
+    <ClCompile Include="Ocx\DialogAlgorithmSelect.cpp" />
+    <ClCompile Include="Ocx\DialogDriveSelect.cpp" />
+    <ClCompile Include="Ocx\GetNumDlg.cpp" />
+    <ClCompile Include="Ocx\GetTextDlg.cpp" />
+    <ClCompile Include="Ocx\ListBoxST.cpp" />
+    <ClCompile Include="Ocx\MyListCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Vision\CameraManager.cpp" />
+    <ClCompile Include="Vision\cvBlobFinder.cpp" />
+    <ClCompile Include="Vision\StaticMatDisplay.cpp" />
+    <ClCompile Include="Vision\Vision.cpp" />
+    <ClCompile Include="Vision\_CtrlTracker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GapInspection.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Ocx\Chart\chartdir60.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GapInspection.rc" _x007B_63885648-1785-41A4-82D5-C578D29E4DA8_x007D_="CActutltype" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

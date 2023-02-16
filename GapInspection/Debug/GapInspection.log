@@ -1,0 +1,15 @@
+﻿Build started 2021-06-08 오후 3:50:15.
+     1>Project "D:\Project\Samsung\UB\backup\통합\GapInspection_20210122_0\GapInspection\GapInspection.vcxproj" on node 2 (Build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\Project\Samsung\UB\backup\통합\GapInspection_20210122_0\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\GapInspection.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\GapInspection.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>d:\project\samsung\ub\backup\통합\gapinspection_20210122_0\gapinspection\stdafx.h(23): fatal error C1083: 포함 파일을 열 수 없습니다. 'afxwin.h': No such file or directory
+     1>Done Building Project "D:\Project\Samsung\UB\backup\통합\GapInspection_20210122_0\GapInspection\GapInspection.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.37
